@@ -37,7 +37,7 @@ class Adaptery (val movies:ArrayList<Movie>):RecyclerView.Adapter<Adaptery.Holde
     fun updateMovieList(newMovieList: List<Movie>) {
 
         movies.clear()
-        movies.addAll(movies)
+        movies.addAll(newMovieList)
         notifyDataSetChanged()
     }
 }

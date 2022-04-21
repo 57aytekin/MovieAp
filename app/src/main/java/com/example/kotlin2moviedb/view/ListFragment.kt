@@ -41,6 +41,7 @@ class ListFragment : Fragment() {
 
 
         viewModel= ViewModelProvider(this).get(ListViewModel::class.java)
+        movie = listOf()
 
         viewModel.refreshData()
             //Recyclerview
@@ -57,7 +58,7 @@ class ListFragment : Fragment() {
 
             movies?.let {
                 recyclerView.visibility=View.VISIBLE
-                adaptery.updateMovieList(movie)
+                adaptery.updateMovieList(movies.results)
 
             }
 

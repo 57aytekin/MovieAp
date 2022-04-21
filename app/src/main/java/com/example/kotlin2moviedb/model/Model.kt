@@ -6,11 +6,11 @@ import com.google.gson.annotations.SerializedName
 data class Movie(
     @SerializedName("title")
     val title: String?,
-    @SerializedName("title")
+    @SerializedName("overview")
     val overview: String?,
-    @SerializedName("title")
+    @SerializedName("release_date")
     val release_date: String?,
-    @SerializedName("title")
+    @SerializedName("poster_path")
     val poster_path: String?
 ) {
     @PrimaryKey(autoGenerate = true)
